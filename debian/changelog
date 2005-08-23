@@ -1,0 +1,54 @@
+modemlink-kanotix (0.5.8) unstable; urgency=low
+
+  * overhaul packaging.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 23 Aug 2005 17:24:31 +0200
+
+modemlink-kanotix (0.5.7) unstable; urgency=low
+
+  * switch to kanotix-su.
+  * improve packaging.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 31 Mar 2005 14:56:06 +0200
+
+modemlink-kanotix (0.5-6) unstable; urgency=low
+
+  * fix dependencies
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 17 Dec 2004 17:02:49 +0100
+
+modemlink-kanotix (0.5-5) unstable; urgency=low
+
+  * fork for Kanotix XDG compatibilty.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 15 Dec 2004 17:02:12 +0100
+
+modemlink-knoppix (0.5-5) unstable; urgency=low
+
+  * Make irda optional
+
+ -- Klaus Knopper <knopper@linuxtag.net>  Mon, 16 Aug 2004 07:50:12 +0200
+
+modemlink-knoppix (0.5-4) unstable; urgency=low
+
+  * Use scanmodem for displaying unsupported winmodems
+
+ -- Klaus Knopper <knopper@linuxtag.net>  Fri, 13 Aug 2004 04:27:37 +0200
+
+modemlink-knoppix (0.5-3) unstable; urgency=low
+
+  * Don't depend on bluez-utils
+
+ -- Klaus Knopper <knopper@linuxtag.net>  Tue, 10 Aug 2004 02:30:09 +0200
+
+modemlink-knoppix (0.5-2) unstable; urgency=low
+
+  * Replaced password requester by less secure inputbox, because people don't seem to notice the default PIN otherwise.
+
+ -- Klaus Knopper <knopper@linuxtag.net>  Tue,  2 Mar 2004 22:47:07 +0100
+
+modemlink-knoppix (0.5-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Klaus Knopper <knopper@linuxtag.net>  Sun, 29 Feb 2004 06:51:41 +0100

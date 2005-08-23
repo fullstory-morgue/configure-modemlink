@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=Setup for serial Modem/IRDA/Bluetooth devices
+Comment[de]=Konfiguration für serielle Modems/IRDA/Bluetooth Geräte
+Name=/dev/modem connection setup (serial/USB/IRDA/Bluetooth)
+Name[de]=/dev/modem Setup (Seriell/USB/IRDA/Bluetooth)
+Icon=kppp
+Type=Application
+Terminal=0
+Exec=kanotix-su modemlink
