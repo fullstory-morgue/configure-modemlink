@@ -1,8 +1,16 @@
+modemlink-kanotix (0.5.9) unstable; urgency=low
+
+  * remove cdbs auto-update feature.
+  * remove virtual knoppix packages.
+  * bump compat level to 5.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 03:01:25 +0100
+
 modemlink-kanotix (0.5.8) unstable; urgency=low
 
   * overhaul packaging.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 23 Aug 2005 17:24:31 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 03:01:21 +0100
 
 modemlink-kanotix (0.5.7) unstable; urgency=low
 
