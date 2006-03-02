@@ -1,8 +1,8 @@
-modemlink-kanotix (0.5.10) UNRELEASED; urgency=low
+modemlink-kanotix (0.5.10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * knoppix --> kanotix transition, thanks to RoEn.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 03:02:30 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Mar 2006 02:40:35 +0100
 
 modemlink-kanotix (0.5.9) unstable; urgency=low
 

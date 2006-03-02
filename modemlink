@@ -1,5 +1,5 @@
 #!/bin/bash +x
-# modemlink - start device drivers and set /dev/modem link in KNOPPIX
+# modemlink - start device drivers and set /dev/modem link in KANOTIX
 # (C) Klaus Knopper Mar 2004
 
 PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin"
@@ -285,7 +285,7 @@ cat >/etc/bluetooth/rfcomm.conf <<EOT
 #
 # RFCOMM configuration file.
 #
-# Created by modemlink-knoppix on $(date)
+# Created by modemlink-kanotix on $(date)
 #
 
 rfcomm0 {
