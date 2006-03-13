@@ -7,7 +7,7 @@ Standards-Version: 3.6.2
 
 Package: modemlink-kanotix
 Architecture: all
-Depends: bluez-utils, irda-utils, dialog, kanotix-su
+Depends: bluez-utils, irda-utils, dialog, kanotix-su, initscripts-kanotix-live
 Suggests: xdialog
 Description: setup /dev/modem
  Lightweight setup tool for /dev/modem.

@@ -1,8 +1,8 @@
-modemlink-kanotix (0.5.11) UNRELEASED; urgency=low
+modemlink-kanotix (0.5.11) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add missing dependency on initscripts-kanotix-live.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Mar 2006 02:42:55 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Mar 2006 10:55:54 +0100
 
 modemlink-kanotix (0.5.10) unstable; urgency=low
 
