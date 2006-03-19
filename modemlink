@@ -14,8 +14,8 @@ export XDIALOG_HIGH_DIALOG_COMPAT
 TMP="/tmp/modemlink.$$"
 
 bailout(){
-rm -f "$TMP"
-exit $1
+	rm -f "$TMP"
+	exit $1
 }
 
 DIALOG="dialog"
@@ -23,72 +23,66 @@ DIALOG="dialog"
 
 trap bailout 1 2 3 15
 
-# LANGUAGE etc.
-[ -f /etc/sysconfig/knoppix ] && . /etc/sysconfig/knoppix
-[ -z "$LANG" ] && export LANG
-[ -z "$LANGUAGE" ] && export LANGUAGE
-[ -z "$CHARSET" ] && export CHARSET
-
 # Language-dependent Messages
 case "$LANGUAGE" in
-de*|at*|ch*)
-TITLE1="Art der Verbindung"
-MESSAGE1="Bitte die gewünschten Verbindungsart auswählen:"
-SERIAL="Serielle Schnittstelle (z.B. Modem)"
-WINMODEM="Nach nicht-unterstützten \"WinModems\" suchen"
-SIR="Standard SIR (oder USB)"
-USB="USB Schnittstelle (z.B. Modem)"
-IRDA="Infrarot Schnittstelle (z.B. für Handy/PDA)"
-BLUETOOTH="Bluetooth Funkadapter (z.B. für Handy/PDA)"
-TITLE_DONGLES="IRDA Adapter-Typ"
-MESSAGE_DONGLES="Bitte den verwendeten IRDA-Adaptertyp auswählen:"
-TITLE_TEST="Adaptertest - Strg-C zum Beenden des Tests"
-TITLE_SRVFAIL="FEHLER"
-MESSAGE_SRVFAIL="Konnte Daemon für Gerät nicht starten. Wahrscheinlich wurde die falsche Schnittstelle ausgewählt." 
-AUTOSEARCH="ALLE Schnittstellen scannen"
-TITLE_BLUES="Bluetooth-Geräte"
-MESSAGE_BLUES="Folgende Bluetooth-Geräte befinden sich in der Umgebung. Bitte eins auswählen:"
-TITLE_PIN="PIN"
-MESSAGE_PIN="Bitte geben Sie eine 4-stellige PIN zur Authentfizierung der Bluetooth-Geräte ein:"
-TITLE_GAUGE="Device-Scan..."
-TITLE_LINK="/dev/modem Link erzeugen..."
-MESSAGE_LINK="Möchten Sie den Symlink /dev/modem auf das neu konfigurierte Gerät setzen? Dies ist notwendig, wenn Sie das Gerät z.B. als Modem für kppp oder GPRS benutzen möchten (beides im Knoppix-Menü \"Netzwerk Konfiguration\" zu finden).
+	de*|at*|ch*)
+		TITLE1="Art der Verbindung"
+		MESSAGE1="Bitte die gewünschten Verbindungsart auswählen:"
+		SERIAL="Serielle Schnittstelle (z.B. Modem)"
+		WINMODEM="Nach nicht-unterstützten \"WinModems\" suchen"
+		SIR="Standard SIR (oder USB)"
+		USB="USB Schnittstelle (z.B. Modem)"
+		IRDA="Infrarot Schnittstelle (z.B. für Handy/PDA)"
+		BLUETOOTH="Bluetooth Funkadapter (z.B. für Handy/PDA)"
+		TITLE_DONGLES="IRDA Adapter-Typ"
+		MESSAGE_DONGLES="Bitte den verwendeten IRDA-Adaptertyp auswählen:"
+		TITLE_TEST="Adaptertest - Strg-C zum Beenden des Tests"
+		TITLE_SRVFAIL="FEHLER"
+		MESSAGE_SRVFAIL="Konnte Daemon für Gerät nicht starten. Wahrscheinlich wurde die falsche Schnittstelle ausgewählt." 
+		AUTOSEARCH="ALLE Schnittstellen scannen"
+		TITLE_BLUES="Bluetooth-Geräte"
+		MESSAGE_BLUES="Folgende Bluetooth-Geräte befinden sich in der Umgebung. Bitte eins auswählen:"
+		TITLE_PIN="PIN"
+		MESSAGE_PIN="Bitte geben Sie eine 4-stellige PIN zur Authentfizierung der Bluetooth-Geräte ein:"
+		TITLE_GAUGE="Device-Scan..."
+		TITLE_LINK="/dev/modem Link erzeugen..."
+		MESSAGE_LINK="Möchten Sie den Symlink /dev/modem auf das neu konfigurierte Gerät setzen? Dies ist notwendig, wenn Sie das Gerät z.B. als Modem für kppp oder GPRS benutzen möchten (beides im Knoppix-Menü \"Netzwerk Konfiguration\" zu finden).
 
 Verlinken von /dev/modem -> "
-TITLE_RETRY="FEHLER"
-MESSAGE_RETRY="Das scheint nicht geklappt zu haben. Noch einmal versuchen?"
-TITLE_BTID="Keine Bluetooth Geräte in Reichweite"
-MESSAGE_BTID="Auf die Sendeanfrage hat kein Bluetooth-Gerät geantwortet. Bitte geben Sie die Adresse eines entfernten Bluetooth-Gerätes ein."
-;;
-*)
-TITLE1="Connection Type"
-MESSAGE1="Please select type of connection:"
-WINMODEM="Scan for unsupported \"WinModems\""
-SERIAL="Serial connector (i.e. Modem)"
-SIR="Standard SIR (or USB)"
-USB="USB connector (i.e. Modem)"
-IRDA="Infrared wireless device (i.e. cellphone/PDA)"
-BLUETOOTH="Bluetooth wireless device (i.e. cellphone/PDA)"
-TITLE_DONGLES="IRDA Adapter type"
-MESSAGE_DONGLES="Please select type of IRDA adapter:"
-TITLE_TEST="Testing adapter - Hit Ctrl-C to end test."
-TITLE_SRVFAIL="ERROR"
-MESSAGE_SRVFAIL="Failed to start device daemon. Probably the selected port is wrong."
-AUTOSEARCH="scan ALL devices"
-TITLE_BLUES="Bluetooth Devices"
-MESSAGE_BLUES="These bluetooth devices exist nearby. Please select:"
-TITLE_PIN="PIN"
-MESSAGE_PIN="Please chose a 4-digit PIN number for authention of bluetooth devices:"
-TITLE_GAUGE="Scanning devices..."
-TITLE_LINK="Create /dev/modem link..."
-MESSAGE_LINK="Do you want to set the symlink /dev/modem to point to the newly configured device? This is necessary if you want o use the device as modem for kppp, as an example, or for using GPRS (all of these located in the Knoppix \"network configuration\" menu).
+		TITLE_RETRY="FEHLER"
+		MESSAGE_RETRY="Das scheint nicht geklappt zu haben. Noch einmal versuchen?"
+		TITLE_BTID="Keine Bluetooth Geräte in Reichweite"
+		MESSAGE_BTID="Auf die Sendeanfrage hat kein Bluetooth-Gerät geantwortet. Bitte geben Sie die Adresse eines entfernten Bluetooth-Gerätes ein."
+		;;
+	*)
+		TITLE1="Connection Type"
+		MESSAGE1="Please select type of connection:"
+		WINMODEM="Scan for unsupported \"WinModems\""
+		SERIAL="Serial connector (i.e. Modem)"
+		SIR="Standard SIR (or USB)"
+		USB="USB connector (i.e. Modem)"
+		IRDA="Infrared wireless device (i.e. cellphone/PDA)"
+		BLUETOOTH="Bluetooth wireless device (i.e. cellphone/PDA)"
+		TITLE_DONGLES="IRDA Adapter type"
+		MESSAGE_DONGLES="Please select type of IRDA adapter:"
+		TITLE_TEST="Testing adapter - Hit Ctrl-C to end test."
+		TITLE_SRVFAIL="ERROR"
+		MESSAGE_SRVFAIL="Failed to start device daemon. Probably the selected port is wrong."
+		AUTOSEARCH="scan ALL devices"
+		TITLE_BLUES="Bluetooth Devices"
+		MESSAGE_BLUES="These bluetooth devices exist nearby. Please select:"
+		TITLE_PIN="PIN"
+		MESSAGE_PIN="Please chose a 4-digit PIN number for authention of bluetooth devices:"
+		TITLE_GAUGE="Scanning devices..."
+		TITLE_LINK="Create /dev/modem link..."
+		MESSAGE_LINK="Do you want to set the symlink /dev/modem to point to the newly configured device? This is necessary if you want o use the device as modem for kppp, as an example, or for using GPRS (all of these located in the Knoppix \"network configuration\" menu).
 
 Create link /dev/modem -> "
-TITLE_RETRY="ERROR"
-MESSAGE_RETRY="This seems to have failed. Do you want to try again?"
-TITLE_BTID="No bluetooth devices in range"
-MESSAGE_BTID="No bluetooth devices responded to our scan. Please enter the address of a remote bluetooth device."
-;;
+		TITLE_RETRY="ERROR"
+		MESSAGE_RETRY="This seems to have failed. Do you want to try again?"
+		TITLE_BTID="No bluetooth devices in range"
+		MESSAGE_BTID="No bluetooth devices responded to our scan. Please enter the address of a remote bluetooth device."
+		;;
 esac
 
 # Shortcut description selected
@@ -147,141 +141,137 @@ ttyUSB3 "USB Serial 3" off)
 
 num=${#COMMANDS[@]}
 
-#for ((i=0; i<$num; i++)); do
-## Remove non-existing desktops/descriptions from list
-#d0="$(($i * 3))"
-#d1="$(($i * 3 + 1))"
-#d2="$(($i * 3 + 2))"
-#if type "${COMMANDS[$i]}" >/dev/null 2>&1; then
-#[ "$DESKTOP" = "${DESKTOPS[$(($i * 3))]}" ] && DESKTOPS[$(($i * 3 + 2))]="on" || DESKTOPS[$(($i * 3 + 2))]="off"
-#else
-#unset DESKTOPS[$d0]
-#unset DESKTOPS[$d1]
-#unset DESKTOPS[$d2]
-#unset COMMANDS[$i]
-#fi
-#done
-
-gauge(){
-rm -f "$TMP.done"
-status=0
-while [ ! -e "$TMP.done" ]; do echo "$status" ; status="`expr \( 100 - $status \) / 4 + $status`"; sleep 2; done | $DIALOG --title "$TITLE_GAUGE" --gauge "$1" 8 75 0
+gauge() {
+	rm -f "$TMP.done"
+	status=0
+	while [ ! -e "$TMP.done" ]; do echo "$status" ; status="`expr \( 100 - $status \) / 4 + $status`"; sleep 2; done | $DIALOG --title "$TITLE_GAUGE" --gauge "$1" 8 75 0
 }
 
 # Stop status bar
-killgauge(){
-touch "$TMP.done" ; wait ; rm -f "$TMP.done"
+killgauge() {
+	touch "$TMP.done" ; wait ; rm -f "$TMP.done"
 }
 
-conntype(){
-rm -f "$TMP"
-$DIALOG --clear --title "$TITLE1" --radiolist "$MESSAGE1" 18 75 9 "${TYPES[@]}" 2>"$TMP" || bailout 1
-read TYPE <"$TMP"
-TYPE="${TYPE#\"}"; TYPE="${TYPE%\"}"
-rm -f "$TMP"
-return 0
+conntype() {
+	rm -f "$TMP"
+	$DIALOG --clear --title "$TITLE1" --radiolist "$MESSAGE1" 18 75 9 "${TYPES[@]}" 2>"$TMP" || bailout 1
+	read TYPE <"$TMP"
+	TYPE="${TYPE#\"}"; TYPE="${TYPE%\"}"
+	rm -f "$TMP"
+	return 0
 }
 
-startservice(){
-case "$TYPE" in
-serial)
-rm -f "$TMP"
-$DIALOG --clear --title "$TITLE_RAWDEVICE" --radiolist "$MESSAGE_RAWDEVICE" 18 75 9 "${SERIALDEVICES[@]}" 2>"$TMP" || bailout 1
-read DEVICE <"$TMP"
-DEVICE="${DEVICE#\"}"; DEVICE="${DEVICE%\"}"
-rm -f "$TMP"
-;;
-winmodem)
-[ -n "$DISPLAY" ] && xterm -e bash -c "scanmodem; read -p 'Enter to quit.'" || { scanmodem; read -p 'Enter to quit.'; }
-return 1
-;;
-usb)
-rm -f "$TMP"
-$DIALOG --clear --title "$TITLE_RAWDEVICE" --radiolist "$MESSAGE_RAWDEVICE" 18 75 9 "${USBDEVICES[@]}" 2>"$TMP" || bailout 1
-read DEVICE <"$TMP"
-DEVICE="${DEVICE#\"}"; DEVICE="${DEVICE%\"}"
-rm -f "$TMP"
-;;
-irda)
-killall irattach 2>/dev/null
-modprobe irda 2>/dev/null
-modprobe ircomm-tty 2>/dev/null
-rm -f "$TMP"
-$DIALOG --clear --title "$TITLE_RAWDEVICE" --radiolist "$MESSAGE_RAWDEVICE" 18 75 9 "${AUTODEVICE[@]}" "${SERIALDEVICES[@]}" "${USBDEVICES[@]}" 2>"$TMP" || bailout 1
-read RAWDEVICE <"$TMP"
-RAWDEVICE="${RAWDEVICE#\"}"; RAWDEVICE="${RAWDEVICE%\"}"
-rm -f "$TMP"
-$DIALOG --clear --title "$TITLE_DONGLES" --radiolist "$MESSAGE_DONGLES" 18 75 9 "${DONGLES[@]}" 2>"$TMP" || bailout 1
-read DONGLE <"$TMP"
-DONGLE="${DONGLE#\"}"; DONGLE="${DONGLE%\"}"
-rm -f "$TMP"
-case "$DONGLE" in auto) DONGLE="" ;; *) DONGLE="-d $DONGLE" ;; esac
-if [ "$RAWDEVICE" = "auto" ]; then
-gauge "Device-Scan..." &
-for i in /dev/ttyUSB* /dev/ttyS*; do
-RAWDEVICE="${i##/dev/}"
-irattach "/dev/$RAWDEVICE" $DONGLE -s
-usleep 125000
-done
-killgauge
-sleep 2
-RAWDEVICE="$(ps auxw | awk '/irattach/{print $12}' | head -1)"
-RAWDEVICE="${RAWDEVICE##/dev/}"
-else
-irattach "/dev/$RAWDEVICE" $DONGLE -s
-sleep 2
-fi
-if ifconfig irda0 >/dev/null 2>&1; then
-true
-else
-$DIALOG --clear --title "$TITLE_SRVFAIL" --msgbox "$MESSAGE_SRVFAIL" 18 75
-DEVICE=""
-return 1
-fi
-DEVICE="ircomm0"
-rm -f /etc/irda.conf
-echo "#irda.conf Version: 1.0
-IRDADEV=/dev/$RAWDEVICE" >/etc/irda.conf
-[ -n "$DONGLE" ] && echo "DONGLE=\"${DONGLE##-d }\"" >>/etc/irda.conf
-echo "DISCOVERY=-s
+startservice() {
+	case "$TYPE" in
+		serial)
+			rm -f "$TMP"
+			$DIALOG --clear --title "$TITLE_RAWDEVICE" --radiolist "$MESSAGE_RAWDEVICE" 18 75 9 "${SERIALDEVICES[@]}" 2>"$TMP" || bailout 1
+			read DEVICE <"$TMP"
+			DEVICE="${DEVICE#\"}"; DEVICE="${DEVICE%\"}"
+			rm -f "$TMP"
+			;;
+		winmodem)
+			[ -n "$DISPLAY" ] && xterm -e bash -c "scanmodem; read -p 'Enter to quit.'" || { scanmodem; read -p 'Enter to quit.'; }
+			return 1
+			;;
+		usb)
+			rm -f "$TMP"
+			$DIALOG --clear --title "$TITLE_RAWDEVICE" --radiolist "$MESSAGE_RAWDEVICE" 18 75 9 "${USBDEVICES[@]}" 2>"$TMP" || bailout 1
+			read DEVICE <"$TMP"
+			DEVICE="${DEVICE#\"}"; DEVICE="${DEVICE%\"}"
+			rm -f "$TMP"
+			;;
+		irda)
+			killall irattach 2>/dev/null
+			modprobe irda 2>/dev/null
+			modprobe ircomm-tty 2>/dev/null
+			rm -f "$TMP"
+			$DIALOG --clear --title "$TITLE_RAWDEVICE" --radiolist "$MESSAGE_RAWDEVICE" 18 75 9 "${AUTODEVICE[@]}" "${SERIALDEVICES[@]}" "${USBDEVICES[@]}" 2>"$TMP" || bailout 1
+			read RAWDEVICE <"$TMP"
+			RAWDEVICE="${RAWDEVICE#\"}"; RAWDEVICE="${RAWDEVICE%\"}"
+			rm -f "$TMP"
+			$DIALOG --clear --title "$TITLE_DONGLES" --radiolist "$MESSAGE_DONGLES" 18 75 9 "${DONGLES[@]}" 2>"$TMP" || bailout 1
+			read DONGLE <"$TMP"
+			DONGLE="${DONGLE#\"}"; DONGLE="${DONGLE%\"}"
+			rm -f "$TMP"
+			case "$DONGLE" in auto) DONGLE="" ;; *) DONGLE="-d $DONGLE" ;; esac
+			if [ "$RAWDEVICE" = "auto" ]; then
+				gauge "Device-Scan..." &
+				
+				for i in /dev/ttyUSB* /dev/ttyS*; do
+					RAWDEVICE="${i##/dev/}"
+					irattach "/dev/$RAWDEVICE" $DONGLE -s
+					usleep 125000
+				done
+				
+				killgauge
+				sleep 2
+				RAWDEVICE="$(ps auxw | awk '/irattach/{print $12}' | head -1)"
+				RAWDEVICE="${RAWDEVICE##/dev/}"
+			else
+				irattach "/dev/$RAWDEVICE" $DONGLE -s
+				sleep 2
+			fi
+
+			if ifconfig irda0 >/dev/null 2>&1; then
+				true
+			else
+				$DIALOG --clear --title "$TITLE_SRVFAIL" --msgbox "$MESSAGE_SRVFAIL" 18 75
+				DEVICE=""
+				return 1
+			fi
+			
+			DEVICE="ircomm0"
+			rm -f /etc/irda.conf
+			echo "#irda.conf Version: 1.0
+			IRDADEV=/dev/$RAWDEVICE" >/etc/irda.conf
+			[ -n "$DONGLE" ] && echo "DONGLE=\"${DONGLE##-d }\"" >>/etc/irda.conf
+			echo "DISCOVERY=-s
 ENABLE=yes" >>/etc/irda.conf
-[ -x /etc/init.d/irda ] && for i in 2 3 5; do ln -sf /etc/init.d/irda /etc/rc$i.d/S99irda; done
-;;
-bluetooth)
-killall hcid 2>/dev/null
-killall rfcomm 2>/dev/null
-hcid || return 1
-count=0
-gauge "Device-Scan..." &
-while read HW NAME; do
-d0="$(($count * 3))"
-d1="$(($count * 3 + 1))"
-d2="$(($count * 3 + 2))"
-BLUES[$d0]="$HW"; BLUES[$d1]="$NAME"; BLUES[$d2]="off"
-count=$(($count + 1))
-done <<EOT
+			[ -x /etc/init.d/irda ] && for i in 2 3 5; do ln -sf /etc/init.d/irda /etc/rc$i.d/S99irda; done
+			;;
+		bluetooth)
+			killall hcid 2>/dev/null
+			killall rfcomm 2>/dev/null
+			hcid || return 1
+			count=0
+			gauge "Device-Scan..." &
+			
+			while read HW NAME; do
+				d0="$(($count * 3))"
+				d1="$(($count * 3 + 1))"
+				d2="$(($count * 3 + 2))"
+				BLUES[$d0]="$HW"; BLUES[$d1]="$NAME"; BLUES[$d2]="off"
+				count=$(($count + 1))
+			done <<EOT
 $(hcitool scan 2>/dev/null | awk '/[0-9]:[0-9]/{print $0}')
 EOT
-killgauge
-if [ -n "${BLUES[0]}" ]; then
-$DIALOG --clear --title "$TITLE_BLUES" --radiolist "$MESSAGE_BLUES" 18 75 9 "${BLUES[@]}" 2>"$TMP" || bailout 1
-else
-$DIALOG --title "$TITLE_BTID" --inputbox "$MESSAGE_BTID" 15 60 "00:00:00:00:00:00" 2>"$TMP" || bailout 1
-fi
-read RAWDEVICE <"$TMP"
-RAWDEVICE="${RAWDEVICE#\"}"; RAWDEVICE="${RAWDEVICE%\"}"
-rm -f "$TMP"
-read PIN < /etc/bluetooth/pin  2>/dev/null
-rm -f "$TMP"
-if [ -n "$DISPLAY" ]; then
-$DIALOG --title "$TITLE_PIN" --inputbox "$MESSAGE_PIN" 8 65 "$PIN" 2>"$TMP" || bailout 1
-fi
-read PIN <"$TMP" 2>/dev/null
-rm -f "$TMP"
-rm -f /etc/bluetooth/pin
-echo "$PIN" >/etc/bluetooth/pin
-rm -f /etc/bluetooth/rfcomm.conf
-cat >/etc/bluetooth/rfcomm.conf <<EOT
+			killgauge
+			
+			if [ -n "${BLUES[0]}" ]; then
+				$DIALOG --clear --title "$TITLE_BLUES" --radiolist "$MESSAGE_BLUES" 18 75 9 "${BLUES[@]}" 2>"$TMP" || bailout 1
+			else
+				$DIALOG --title "$TITLE_BTID" --inputbox "$MESSAGE_BTID" 15 60 "00:00:00:00:00:00" 2>"$TMP" || bailout 1
+			fi
+
+			read RAWDEVICE <"$TMP"
+			RAWDEVICE="${RAWDEVICE#\"}"; RAWDEVICE="${RAWDEVICE%\"}"
+			rm -f "$TMP"
+			
+			read PIN < /etc/bluetooth/pin  2>/dev/null
+			rm -f "$TMP"
+
+			if [ -n "$DISPLAY" ]; then
+				$DIALOG --title "$TITLE_PIN" --inputbox "$MESSAGE_PIN" 8 65 "$PIN" 2>"$TMP" || bailout 1
+			fi
+
+			read PIN <"$TMP" 2>/dev/null
+			rm -f "$TMP"
+			rm -f /etc/bluetooth/pin
+			echo "$PIN" >/etc/bluetooth/pin
+			rm -f /etc/bluetooth/rfcomm.conf
+				
+			cat >/etc/bluetooth/rfcomm.conf <<EOT
 #
 # RFCOMM configuration file.
 #
@@ -298,27 +288,30 @@ rfcomm0 {
  comment "Selected Bluetooth device";
 }
 EOT
-rfcomm bind all
-[ -x /etc/init.d/bluez-utils ] && for i in 2 3 5; do ln -sf /etc/init.d/bluez-utils /etc/rc$i.d/S99bluez-utils; done
-DEVICE=rfcomm0
-;;
-esac
-return 0
+
+			rfcomm bind all
+			[ -x /etc/init.d/bluez-utils ] && for i in 2 3 5; do ln -sf /etc/init.d/bluez-utils /etc/rc$i.d/S99bluez-utils; done
+			DEVICE=rfcomm0
+			;;
+	esac
+	return 0
 }
 
 # MAIN
 
 while true; do
-conntype
-startservice
-if [ "$?" = "0" -a -n "$DEVICE" ]; then
-$DIALOG --title "$TITLE_LINK" --yesno "$MESSAGE_LINK $DEVICE ?" 15 65 || bailout 1
-rm -f /dev/modem
-ln -sf /dev/"$DEVICE" /dev/modem
-break
-else
-$DIALOG --clear --title "$TITLE_RETRY" --yesno "$MESSAGE_RETRY" 18 75 || bailout 1
-fi
+	conntype
+	startservice
+	
+	if [ "$?" = "0" -a -n "$DEVICE" ]; then
+		$DIALOG --title "$TITLE_LINK" --yesno "$MESSAGE_LINK $DEVICE ?" 15 65 || bailout 1
+		rm -f /dev/modem
+		ln -sf /dev/"$DEVICE" /dev/modem
+		break
+	else
+		$DIALOG --clear --title "$TITLE_RETRY" --yesno "$MESSAGE_RETRY" 18 75 || bailout 1
+	fi
 done
 
 bailout 0
+
