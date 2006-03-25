@@ -1,8 +1,8 @@
-modemlink-kanotix (0.5.13) UNRELEASED; urgency=low
+modemlink-kanotix (0.5.13) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * /etc/init.d/bluetooth replaces /etc/init.d/bluetooth.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 19 Mar 2006 15:16:27 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 26 Mar 2006 00:49:23 +0100
 
 modemlink-kanotix (0.5.12) unstable; urgency=low
 

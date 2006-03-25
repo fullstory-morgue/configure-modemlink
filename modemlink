@@ -290,7 +290,7 @@ rfcomm0 {
 EOT
 
 			rfcomm bind all
-			[ -x /etc/init.d/bluez-utils ] && for i in 2 3 5; do ln -sf /etc/init.d/bluez-utils /etc/rc$i.d/S99bluez-utils; done
+			[ -x /etc/init.d/bluetooth ] && for i in 2 3 5; do ln -sf /etc/init.d/bluetooth /etc/rc$i.d/S99bluetooth; done
 			DEVICE=rfcomm0
 			;;
 	esac
