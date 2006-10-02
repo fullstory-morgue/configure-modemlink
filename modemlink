@@ -201,7 +201,7 @@ startservice() {
 				for i in /dev/ttyUSB* /dev/ttyS*; do
 					RAWDEVICE="${i##/dev/}"
 					irattach "/dev/$RAWDEVICE" $DONGLE -s
-					usleep 125000
+					sleep 0.125s
 				done
 				
 				killgauge
