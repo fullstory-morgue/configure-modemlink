@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=Setup for serial Modem/IRDA/Bluetooth devices
-Comment[de]=Konfiguration für serielle Modems/IRDA/Bluetooth Geräte
+Comment[de]=Konfiguration fÃ¼r serielle Modems/IRDA/Bluetooth GerÃ¤te
 Name=/dev/modem connection setup (serial/USB/IRDA/Bluetooth)
 Name[de]=/dev/modem Setup (Seriell/USB/IRDA/Bluetooth)
 Icon=kppp
