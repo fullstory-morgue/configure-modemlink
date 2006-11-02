@@ -1,8 +1,10 @@
-modemlink-kanotix (0.5.16) UNRELEASED; urgency=low
+modemlink-kanotix (0.5.16) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * don't add /usr/X11R6/bin/ to search path.
+  * fix localization.
+  * use kanotix-su.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 13:48:35 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 20:52:46 +0100
 
 modemlink-kanotix (0.5.15) unstable; urgency=low
 

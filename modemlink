@@ -2,18 +2,18 @@
 # modemlink - start device drivers and set /dev/modem link in KANOTIX
 # (C) Klaus Knopper Mar 2004
 
-PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin"
+PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 export PATH
 
 XDIALOG_HIGH_DIALOG_COMPAT=1
 export XDIALOG_HIGH_DIALOG_COMPAT
 
 # Get root
-[ "`id -u`" != "0" ] && exec sudo "$0" "$@"
+[ "`id -u`" != "0" ] && exec kanotix-su "$0" "$@"
 
 TMP="/tmp/modemlink.$$"
 
-bailout(){
+bailout () {
 	rm -f "$TMP"
 	exit $1
 }
@@ -24,7 +24,7 @@ DIALOG="dialog"
 trap bailout 1 2 3 15
 
 # Language-dependent Messages
-case "$LANGUAGE" in
+case "$LANG" in
 	de*|at*|ch*)
 		TITLE1="Art der Verbindung"
 		MESSAGE1="Bitte die gewünschten Verbindungsart auswählen:"
