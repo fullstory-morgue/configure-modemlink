@@ -1,3 +1,9 @@
+modemlink-kanotix (0.5.17) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 20:54:15 +0100
+
 modemlink-kanotix (0.5.16) unstable; urgency=low
 
   * don't add /usr/X11R6/bin/ to search path.
