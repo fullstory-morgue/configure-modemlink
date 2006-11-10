@@ -11,7 +11,7 @@ export XDIALOG_HIGH_DIALOG_COMPAT
 # Get root
 [ "`id -u`" != "0" ] && exec kanotix-su "$0" "$@"
 
-TMP="/tmp/modemlink.$$"
+TMP="$(mktemp -p /tmp/ modemlink-XXXXXXXXXX)"
 
 bailout () {
 	rm -f "$TMP"

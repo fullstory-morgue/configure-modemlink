@@ -1,8 +1,8 @@
-modemlink-kanotix (0.5.17) UNRELEASED; urgency=low
+modemlink-kanotix (0.5.17) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix insecure tempfile handling.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 20:54:15 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Nov 2006 15:07:49 +0100
 
 modemlink-kanotix (0.5.16) unstable; urgency=low
 
