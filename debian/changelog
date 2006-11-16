@@ -1,8 +1,9 @@
-modemlink-kanotix (0.5.18) UNRELEASED; urgency=low
+modemlink-kanotix (0.5.18) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * use generic x-terminal-emulator support instead of harcoded application,
+    thanks to x-un-i.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Nov 2006 15:08:58 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 16 Nov 2006 22:52:11 +0100
 
 modemlink-kanotix (0.5.17) unstable; urgency=low
 

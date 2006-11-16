@@ -171,7 +171,7 @@ startservice() {
 			rm -f "$TMP"
 			;;
 		winmodem)
-			[ -n "$DISPLAY" ] && xterm -e bash -c "scanmodem; read -p 'Enter to quit.'" || { scanmodem; read -p 'Enter to quit.'; }
+			[ -n "$DISPLAY" ] && x-terminal-emulator -e bash -c "scanmodem; read -p 'Enter to quit.'" || { scanmodem; read -p 'Enter to quit.'; }
 			return 1
 			;;
 		usb)
