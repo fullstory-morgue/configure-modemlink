@@ -1,8 +1,10 @@
-modemlink-kanotix (0.5.19) UNRELEASED; urgency=low
+configure-modemlink (0.5.19) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 16 Nov 2006 22:54:25 +0100
+  * Initial sidux version
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Fri,  1 Dec 2006 17:35:36 +0100
 
 modemlink-kanotix (0.5.18) unstable; urgency=low
 

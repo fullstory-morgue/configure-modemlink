@@ -6,4 +6,4 @@ Name[de]=/dev/modem Setup (Seriell/USB/IRDA/Bluetooth)
 Icon=kppp
 Type=Application
 Terminal=0
-Exec=kanotix-su modemlink
+Exec=su-me modemlink
