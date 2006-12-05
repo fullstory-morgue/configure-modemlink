@@ -1,8 +1,8 @@
-configure-modemlink (0.5.20) UNRELEASED; urgency=low
+configure-modemlink (0.5.20) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * conflict with modemlink-kanotix.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Dec 2006 01:55:16 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  5 Dec 2006 21:55:43 +0100
 
 configure-modemlink (0.5.19) unstable; urgency=low
 

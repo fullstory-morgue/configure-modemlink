@@ -9,5 +9,6 @@ Package: configure-modemlink
 Architecture: all
 Depends: bluez-utils, irda-utils, dialog, kanotix-su
 Suggests: xdialog, xterm | x-terminal-emulator
+Conflicts: modemlink-kanotix
 Description: setup /dev/modem
  Lightweight setup tool for /dev/modem.
