@@ -1,8 +1,8 @@
-configure-modemlink (0.5.21) UNRELEASED; urgency=low
+configure-modemlink (0.5.21) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * we need su-me, not kanotix-su.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  5 Dec 2006 21:57:08 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  5 Dec 2006 23:25:18 +0100
 
 configure-modemlink (0.5.20) unstable; urgency=low
 

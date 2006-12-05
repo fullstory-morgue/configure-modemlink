@@ -7,7 +7,7 @@ Standards-Version: 3.7.2
 
 Package: configure-modemlink
 Architecture: all
-Depends: bluez-utils, irda-utils, dialog, kanotix-su
+Depends: bluez-utils, irda-utils, dialog, su-me
 Suggests: xdialog, xterm | x-terminal-emulator
 Conflicts: modemlink-kanotix
 Description: setup /dev/modem
