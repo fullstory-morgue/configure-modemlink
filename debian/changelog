@@ -1,3 +1,9 @@
+configure-modemlink (0.5.23) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 30 Dec 2006 17:58:37 +0100
+
 configure-modemlink (0.5.22) unstable; urgency=low
 
   * depend on procps.
