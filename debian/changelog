@@ -1,8 +1,8 @@
-configure-modemlink (0.5.23) UNRELEASED; urgency=low
+configure-modemlink (0.5.23) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * modemlink-kanotix was never in sidux or debian, don't conflict with it.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 30 Dec 2006 17:58:37 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 13:15:34 +0100
 
 configure-modemlink (0.5.22) unstable; urgency=low
 
