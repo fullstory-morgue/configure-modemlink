@@ -1,9 +1,13 @@
 [Desktop Entry]
-Comment=Setup for serial Modem/IRDA/Bluetooth devices
-Comment[de]=Konfiguration für serielle Modems/IRDA/Bluetooth Geräte
+Encoding=UTF-8
+Type=Application
+Exec=su-me modemlink
+Icon=kppp
+
 Name=/dev/modem connection setup (serial/USB/IRDA/Bluetooth)
 Name[de]=/dev/modem Setup (Seriell/USB/IRDA/Bluetooth)
-Icon=kppp
-Type=Application
-Terminal=0
-Exec=su-me modemlink
+Comment=Setup for serial Modem/IRDA/Bluetooth devices
+Comment[de]=Konfiguration für serielle Modems/IRDA/Bluetooth Geräte
+
+Categories=sidux;Net
+
