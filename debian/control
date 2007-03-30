@@ -7,7 +7,7 @@ Standards-Version: 3.7.2
 
 Package: configure-modemlink
 Architecture: all
-Depends: bluez-utils, irda-utils, dialog, procps, su-me
+Depends: bluez-utils, irda-utils, dialog, procps, sidux-xdg, su-me
 Suggests: xdialog, xterm | x-terminal-emulator
 Description: setup /dev/modem
  Lightweight setup tool for /dev/modem.
