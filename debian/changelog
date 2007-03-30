@@ -1,8 +1,8 @@
-configure-modemlink (0.5.25) UNRELEASED; urgency=low
+configure-modemlink (0.5.25) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix *.desktop location.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 Mar 2007 23:03:11 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 31 Mar 2007 01:39:20 +0200
 
 configure-modemlink (0.5.24) unstable; urgency=low
 
