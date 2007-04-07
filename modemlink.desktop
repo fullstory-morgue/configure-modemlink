@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Type=Application
 Exec=su-me modemlink
-Icon=kppp
+Icon=sidux-modemlink
 
 Name=/dev/modem connection setup (serial/USB/IRDA/Bluetooth)
 Name[de]=/dev/modem Setup (Seriell/USB/IRDA/Bluetooth)

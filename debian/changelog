@@ -1,8 +1,12 @@
 configure-modemlink (0.5.26) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 31 Mar 2007 01:40:28 +0200
+  [ Joaquim Boura ]
+  * set new icon
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sat, 07 Apr 2007 15:01:13 +0200
 
 configure-modemlink (0.5.25) unstable; urgency=low
 
