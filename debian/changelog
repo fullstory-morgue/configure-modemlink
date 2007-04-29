@@ -1,9 +1,5 @@
-configure-modemlink (0.5.27) UNRELEASED; urgency=low
+configure-modemlink (0.5.27) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Joaquim Boura ]
   * new icon sidux-modemlink
 
  -- Joaquim Boura <x-un-i@sidux.com>  Sun, 29 Apr 2007 18:38:52 +0200
