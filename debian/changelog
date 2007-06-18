@@ -1,8 +1,9 @@
-configure-modemlink (0.5.28) UNRELEASED; urgency=low
+configure-modemlink (0.5.28) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * rework init.d handling
+  * don't display verbose output.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Apr 2007 00:54:49 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Jun 2007 11:56:29 +0200
 
 configure-modemlink (0.5.27) unstable; urgency=low
 

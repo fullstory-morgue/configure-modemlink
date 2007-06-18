@@ -1,6 +1,7 @@
-#!/bin/bash +x
-# modemlink - start device drivers and set /dev/modem link in KANOTIX
-# (C) Klaus Knopper Mar 2004
+#!/bin/bash
+# modemlink - start device drivers and set /dev/modem link
+# (C) 2004 Klaus Knopper
+# (C) 2004-2007 Stefan Lippers-Hollmann <s.l-h@gmx.de>
 
 PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 export PATH
@@ -223,17 +224,24 @@ startservice() {
 			
 			DEVICE="ircomm0"
 			rm -f /etc/irda.conf
-			echo "#irda.conf Version: 1.0
-			IRDADEV=/dev/$RAWDEVICE" >/etc/irda.conf
-			[ -n "$DONGLE" ] && echo "DONGLE=\"${DONGLE##-d }\"" >>/etc/irda.conf
-			echo "DISCOVERY=-s
-ENABLE=yes" >>/etc/irda.conf
-			[ -x /etc/init.d/irda ] && for i in 2 3 5; do ln -sf /etc/init.d/irda /etc/rc$i.d/S99irda; done
+
+			echo "#irda.conf Version: 1.0"				 >/etc/irda.conf
+			echo "IRDADEV=/dev/$RAWDEVICE"				>>/etc/irda.conf
+			[ -n "$DONGLE" ] && echo "DONGLE=\"${DONGLE##-d }\""	>>/etc/irda.conf
+			echo "DISCOVERY=-s"					>>/etc/irda.conf
+			echo "ENABLE=yes"					>>/etc/irda.conf
+
+			if [ -x "/etc/init.d/irda-utils" ]; then
+				/usr/sbin/update-rc.d -f irda-utils remove >/dev/null 2>&1
+				update-rc.d irda-utils defaults >/dev/null
+				[ -x "/usr/sbin/invoke-rc-d" ] && /usr/sbin/invoke-rc.d irda-utils restart || /etc/init.d/irda-utils restart
+			fi
 			;;
 		bluetooth)
 			killall hcid 2>/dev/null
 			killall rfcomm 2>/dev/null
 			hcid || return 1
+
 			count=0
 			gauge "Device-Scan..." &
 			
@@ -268,6 +276,7 @@ EOT
 			read PIN <"$TMP" 2>/dev/null
 			rm -f "$TMP"
 			rm -f /etc/bluetooth/pin
+
 			echo "$PIN" >/etc/bluetooth/pin
 			rm -f /etc/bluetooth/rfcomm.conf
 				
@@ -290,7 +299,11 @@ rfcomm0 {
 EOT
 
 			rfcomm bind all
-			[ -x /etc/init.d/bluetooth ] && for i in 2 3 5; do ln -sf /etc/init.d/bluetooth /etc/rc$i.d/S99bluetooth; done
+			if [ -x /etc/init.d/bluetooth ]; then
+				/usr/sbin/update-rc.d -f bluez-utils remove >/dev/null 2>&1
+				/usr/sbin/update-rc.d bluetooth start 25 2 3 4 5 . stop 74 0 1 6 . >/dev/null
+				[ -x /usr/sbin/invoke-rc.d ] && /usr/sbin/invoke-rc.d bluetooth restart || /etc/init.d/bluetooth restart
+			fi
 			DEVICE=rfcomm0
 			;;
 	esac
