@@ -266,20 +266,22 @@ EOT
 			RAWDEVICE="${RAWDEVICE#\"}"; RAWDEVICE="${RAWDEVICE%\"}"
 			rm -f "$TMP"
 			
-			read PIN < /etc/bluetooth/pin  2>/dev/null
-			rm -f "$TMP"
+			if [ -r /etc/bluetooth/pin ]; then
+				read PIN < /etc/bluetooth/pin  2>/dev/null
+				rm -f "$TMP"
+			fi
 
 			if [ -n "$DISPLAY" ]; then
 				$DIALOG --title "$TITLE_PIN" --inputbox "$MESSAGE_PIN" 8 65 "$PIN" 2>"$TMP" || bailout 1
 			fi
 
 			read PIN <"$TMP" 2>/dev/null
-			rm -f "$TMP"
-			rm -f /etc/bluetooth/pin
+			rm -f	"$TMP" \
+				/etc/bluetooth/pin
 
 			echo "$PIN" >/etc/bluetooth/pin
+
 			rm -f /etc/bluetooth/rfcomm.conf
-				
 			cat >/etc/bluetooth/rfcomm.conf <<EOT
 #
 # RFCOMM configuration file.
