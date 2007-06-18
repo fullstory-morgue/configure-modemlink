@@ -249,7 +249,11 @@ startservice() {
 				d0="$(($count * 3))"
 				d1="$(($count * 3 + 1))"
 				d2="$(($count * 3 + 2))"
-				BLUES[$d0]="$HW"; BLUES[$d1]="$NAME"; BLUES[$d2]="off"
+
+				BLUES[$d0]="$HW"
+				BLUES[$d1]="$NAME"
+				BLUES[$d2]="off"
+
 				count=$(($count + 1))
 			done <<EOT
 $(hcitool scan 2>/dev/null | awk '/[0-9]:[0-9]/{print $0}')

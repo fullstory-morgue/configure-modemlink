@@ -1,8 +1,9 @@
 configure-modemlink (0.5.30) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * minor coding style fixes.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Jun 2007 12:28:08 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Jun 2007 12:55:49 +0200
 
 configure-modemlink (0.5.29) unstable; urgency=low
 
