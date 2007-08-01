@@ -1,0 +1,133 @@
+# translation of de.po to Deutsch
+# German translations for PACKAGE package.
+# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# hjt <hjt@sidux.com>, 2007.
+# Horst Tritremmel <hjt@sidux.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-01 17:25+0200\n"
+"PO-Revision-Date: 2007-08-01 17:33+0200\n"
+"Last-Translator: Horst Tritremmel <hjt@sidux.com>\n"
+"Language-Team: Deutsch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: modemlink:22
+msgid "Error: You must be root to run this script!"
+msgstr ""
+
+#: modemlink:52
+msgid "Serial connector (i.e. Modem)"
+msgstr "Serielle Schnittstelle (z.B. Modem)"
+
+#: modemlink:53
+msgid "USB connector (i.e. Modem)"
+msgstr "USB Schnittstelle (z.B. Modem)"
+
+#: modemlink:54
+msgid "Infrared wireless device (i.e. cellphone/PDA)"
+msgstr ""
+
+#: modemlink:55
+msgid "Bluetooth wireless device (i.e. cellphone/PDA)"
+msgstr ""
+
+#: modemlink:65
+msgid "Standard SIR (or USB)"
+msgstr ""
+
+#: modemlink:81
+msgid "scan ALL devices"
+msgstr ""
+
+#: modemlink:124
+msgid "Scanning devices..."
+msgstr ""
+
+#: modemlink:134
+msgid "Connection Type"
+msgstr ""
+
+#: modemlink:134
+msgid "Please select type of connection:"
+msgstr "Bitte die gewünschten Verbindungsart auswählen:"
+
+#: modemlink:144 modemlink:152 modemlink:160
+msgid "DEVICE"
+msgstr ""
+
+#: modemlink:144 modemlink:152 modemlink:160
+msgid "Please select"
+msgstr "Bitte auswählen"
+
+#: modemlink:164
+msgid "IRDA Adapter type"
+msgstr ""
+
+#: modemlink:164
+msgid "Please select type of IRDA adapter:"
+msgstr ""
+
+#: modemlink:191 modemlink:308
+msgid "ERROR"
+msgstr ""
+
+#: modemlink:191
+msgid "Failed to start device daemon. Probably the selected port is wrong."
+msgstr ""
+
+#: modemlink:231
+msgid "Bluetooth Devices"
+msgstr ""
+
+#: modemlink:231
+msgid "These bluetooth devices exist nearby. Please select:"
+msgstr ""
+
+#: modemlink:236
+msgid "No bluetooth devices in range"
+msgstr ""
+
+#: modemlink:237
+msgid ""
+"No bluetooth devices responded to our scan. Please enter the address of a "
+"remote bluetooth device."
+msgstr ""
+
+#: modemlink:252
+msgid "PIN"
+msgstr ""
+
+#: modemlink:253
+msgid "Please chose a 4-digit PIN number for authention of bluetooth devices:"
+msgstr ""
+
+#: modemlink:300
+msgid "Create /dev/modem link..."
+msgstr ""
+
+#: modemlink:300
+#, sh-format
+msgid ""
+"Do you want to set the symlink /dev/modem to point to the newly configured "
+"device? This is necessary if you want o use the device as modem for kppp, as "
+"an example, or for using GPRS (all of these located in the sidux \"network "
+"configuration\" menu).\n"
+"\n"
+"Create link /dev/modem ->  $DEVICE ?"
+msgstr ""
+"Möchten Sie den Symlink /dev/modem auf das neu konfigurierte Gerät setzen? Dies ist notwendig, wenn Sie das Gerät z.B. als Modem für kppp oder GPRS benutzen möchten (beides im sidux-Menü \"Netzwerk Konfiguration\" zu finden)\n"
+"\n"
+"Verlinken von /dev/modem ->   $DEVICE ?"
+
+#: modemlink:308
+msgid "This seems to have failed. Do you want to try again?"
+msgstr ""
+

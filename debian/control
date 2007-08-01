@@ -2,12 +2,12 @@ Source: configure-modemlink
 Section: net
 Priority: optional
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: cdbs, debhelper (>= 5)
+Build-Depends: cdbs, debhelper (>= 5), gettext
 Standards-Version: 3.7.2
 
 Package: configure-modemlink
 Architecture: all
-Depends: bluez-utils, irda-utils, dialog, procps, sidux-xdg, su-me
-Suggests: xdialog, xterm | x-terminal-emulator
+Depends: bluez-utils, irda-utils, ssft, procps, sidux-xdg, su-me, gettext
+Suggests: xterm | x-terminal-emulator
 Description: setup /dev/modem
  Lightweight setup tool for /dev/modem.
