@@ -1,9 +1,15 @@
 configure-modemlink (0.5.30) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
   * minor coding style fixes.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Jun 2007 12:55:49 +0200
+  [ Horst Tritremmel ]
+  * add gettext to (build-) dependencies
+  * add gettext support and german language file
+  * changed Xdialog to ssft
+
+ -- Horst Tritremmel <hjt@sidux.com>  Wed, 01 Aug 2007 20:17:52 +0200
 
 configure-modemlink (0.5.29) unstable; urgency=low
 
