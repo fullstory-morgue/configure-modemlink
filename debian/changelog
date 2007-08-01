@@ -1,7 +1,6 @@
-configure-modemlink (0.5.30) UNRELEASED; urgency=low
+configure-modemlink (0.5.30) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
   * minor coding style fixes.
 
   [ Horst Tritremmel ]
