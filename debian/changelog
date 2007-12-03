@@ -1,8 +1,8 @@
-configure-modemlink (0.5.33) UNRELEASED; urgency=low
+configure-modemlink (0.5.33) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix copy'n'paste errors.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Dec 2007 12:44:42 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Dec 2007 13:36:38 +0100
 
 configure-modemlink (0.5.32) unstable; urgency=low
 

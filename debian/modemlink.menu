@@ -1,4 +1,4 @@
-?package(configure-cups): \
+?package(configure-modemlink): \
 	needs="X11" \
 	section="Applications/System/Administration" \
 	hints="sidux,Config" \
