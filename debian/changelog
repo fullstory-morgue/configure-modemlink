@@ -1,8 +1,9 @@
-configure-modemlink (0.5.32) UNRELEASED; urgency=low
+configure-modemlink (0.5.32) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * update to Standards-Version 3.7.3, no changes necessary.
+  * add entry for the debian menu system.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 29 Oct 2007 15:25:26 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Dec 2007 12:43:19 +0100
 
 configure-modemlink (0.5.31) unstable; urgency=low
 

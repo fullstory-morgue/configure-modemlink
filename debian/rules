@@ -5,3 +5,11 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 build/configure-modemlink::
 	# Gettext Internationalisation (i18n)
 	DESTDIR=$(CURDIR)/debian/configure-modemlink $(CURDIR)/po/make_po.sh modemlink.mo
+
+install/configure-modemlink::
+	mkdir -p debian/configure-modemlink/usr/share/pixmaps
+	convert icons/hicolor/32x32/apps/sidux-modemlink.png \
+		debian/configure-modemlink/usr/share/pixmaps/sidux-modemlink.xpm
+	convert icons/hicolor/16x16/apps/sidux-modemlink.png \
+	debian/configure-modemlink/usr/share/pixmaps/sidux-modemlink-16.xpm
+

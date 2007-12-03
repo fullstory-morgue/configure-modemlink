@@ -1,0 +1,8 @@
+?package(configure-cups): \
+	needs="X11" \
+	section="Applications/System/Administration" \
+	hints="sidux,Config" \
+	title="/dev/modem connection setup (serial/USB/IRDA/Bluetooth)" \
+	icon32x32="/usr/share/pixmaps/sidux-modemlink.xpm" \
+	icon16x16="/usr/share/pixmaps/sidux-modemlink-16.xpm" \
+	command="/usr/sbin/modemlink"
