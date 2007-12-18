@@ -6,8 +6,12 @@ Icon=sidux-modemlink
 
 Name=/dev/modem connection setup (serial/USB/IRDA/Bluetooth)
 Name[de]=/dev/modem Setup (Seriell/USB/IRDA/Bluetooth)
+Name[pt]=/dev/modem Configuração (Seriell/USB/IRDA/Bluetooth)
+Name[pt_BR]=/dev/modem definição de conexão (Seriell/USB/IRDA/Bluetooth)
+Name[ru]=Установка /dev/modem (seriell/USB/IRDA/Bluetooth)
 Comment=Setup for serial Modem/IRDA/Bluetooth devices
 Comment[de]=Konfiguration für serielle Modems/IRDA/Bluetooth Geräte
-
+Comment[pt]=Configuração para Equipamento Modems/IRDA/Bluetooth com interface serial
+Comment[ptBR]=Configuração para Equipamento Modems/IRDA/Bluetooth com interface serial
+Comment[ru]=Конфигурация для модемов/IRDA/Bluetooth
 Categories=sidux;Net
-
