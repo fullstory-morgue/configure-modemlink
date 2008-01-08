@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Exec=su-me modemlink
+Exec=su-to-root -X -c /usr/sbin/modemlink
 Icon=sidux-modemlink
 
 Name=/dev/modem connection setup (serial/USB/IRDA/Bluetooth)
@@ -14,4 +14,4 @@ Comment[de]=Konfiguration für serielle Modems/IRDA/Bluetooth Geräte
 Comment[pt]=Configuração para Equipamento Modems/IRDA/Bluetooth com interface serial
 Comment[ptBR]=Configuração para Equipamento Modems/IRDA/Bluetooth com interface serial
 Comment[ru]=Конфигурация для модемов/IRDA/Bluetooth
-Categories=sidux;Net
+Categories=Network;

@@ -9,7 +9,8 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/configure-modemlink/trunk/
 
 Package: configure-modemlink
 Architecture: all
-Depends: bluez-utils, irda-utils, ssft, procps, sidux-xdg, su-me, gettext
+Depends: bluez-utils, irda-utils, ssft, procps, gettext
+Recommends: menu
 Suggests: xterm | x-terminal-emulator
 Description: setup /dev/modem
  Lightweight setup tool for /dev/modem.

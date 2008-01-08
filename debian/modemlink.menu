@@ -5,4 +5,4 @@
 	title="/dev/modem connection setup (serial/USB/IRDA/Bluetooth)" \
 	icon32x32="/usr/share/pixmaps/sidux-modemlink.xpm" \
 	icon16x16="/usr/share/pixmaps/sidux-modemlink-16.xpm" \
-	command="/usr/sbin/modemlink"
+	command="su-to-root -X -c /usr/sbin/modemlink"
