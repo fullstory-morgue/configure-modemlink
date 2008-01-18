@@ -2,7 +2,7 @@ Source: configure-modemlink
 Section: net
 Priority: optional
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: cdbs, debhelper (>= 5), gettext, imagemagick
+Build-Depends: cdbs, debhelper (>= 6), gettext, imagemagick
 Standards-Version: 3.7.3
 Vcs-Svn: svn://svn.berlios.de/fullstory/configure-modemlink/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/configure-modemlink/trunk/
